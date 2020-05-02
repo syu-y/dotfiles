@@ -1,0 +1,38 @@
+{
+	"analytics-uuid": "96cb013f-d0fc-4db7-91e0-38358fbde7ae",
+	"motd": {
+		"minVersion": "3.0.5"
+	},
+	"motd.fetched": 1581831429288,
+	"usage": true,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "106484972480125489866",
+		"email": "syu12580526@gmail.com",
+		"email_verified": true,
+		"at_hash": "tXcFeV29qWIuaTWbegiAWA",
+		"iat": 1578214063,
+		"exp": 1578217663
+	},
+	"tokens": {
+		"expires_at": 1581835047736,
+		"refresh_token": "1//0e11IoK0n4LYnCgYIARAAGA4SNwF-L9Ir22Fd6RxyThbUn-wL3g8Nr4OpUoiiKvI1g5WBmJ9MyJLAIQBQMt-DTW6-cllkE6huFnE",
+		"scopes": [
+			"email",
+			"https://www.googleapis.com/auth/cloud-platform",
+			"https://www.googleapis.com/auth/cloudplatformprojects.readonly",
+			"https://www.googleapis.com/auth/firebase",
+			"openid"
+		],
+		"access_token": "ya29.Ime9BzyVbBXBwUeDF4WaR3Qj0sCcekpNjJX_GmgfhTp1_q7eNpe9OlkEZvZfwVXQ8t1oWCoHVMol_05JmY0qFAWmv-kNwb057aJE92YnHvc8uPt_MLzPq84HDR_t8wrmDKWf-0jEMN6X",
+		"expires_in": 3599,
+		"scope": "https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform openid https://www.googleapis.com/auth/userinfo.email",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc2MmZhNjM3YWY5NTM1OTBkYjhiYjhhNjM2YmYxMWQ0MzYwYWJjOTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA2NDg0OTcyNDgwMTI1NDg5ODY2IiwiZW1haWwiOiJzeXUxMjU4MDUyNkBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6ImtFVWprWE44UEJtcExDTDFjR2lXbVEiLCJpYXQiOjE1ODE4MzE0NDgsImV4cCI6MTU4MTgzNTA0OH0.tchd499pbpFy8at_R--Tta4hN4sRHXUKq9mVH6jI6wJhokLzdZ6erHsNFh1WcWKmrrckfi1A3nERJWKmaXg-eu4pl-E6RKv3VYvsljZ-DiuAhQI7dEbKq1AFMOtOpxweWnXFk1YL5W-U4m7iaHVVFgUwt2xchUCcbslxfyZnRlk12y-jvXTgPqnREQx9vzfI-ppbnCPCzqwq0VmNvn4aGv6RZoPmtyZtv64XzjmVcpwIKdyodvDXNf5rKwmplS7yzeHOqS_NNkgLCmm1IXFcflVQJ4tgEXAKB0t3zDkykIceC9kriFrMEcVNyzlrdhPynngiAHHU-80KWj8pImiB9g"
+	},
+	"activeProjects": {
+		"/Users/Syuhei/Documents/VScodews/self-active-log": "my-app-4be68"
+	}
+}

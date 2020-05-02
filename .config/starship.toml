@@ -1,0 +1,145 @@
+prompt_order = [
+    "username",
+    "hostname",
+    "kubernetes",
+    "directory",
+    "git_branch",
+    "git_commit",
+    "git_state",
+    "git_status",
+    "hg_branch",
+    "docker_context",
+    "package",
+    "dotnet",
+    "elixir",
+    "elm",
+    "golang",
+    "haskell",
+    "java",
+    "julia",
+    "nodejs",
+    "php",
+    "python",
+    "ruby",
+    "rust",
+    "terraform",
+    "nix_shell",
+    "conda",
+    "memory_usage",
+    "aws",
+    "env_var",
+    "crystal",
+    "cmd_duration",
+    "line_break",
+    "jobs",
+    "battery",
+    "time",
+    "character",
+]
+
+# Don't print a new line at the start of the prompt
+add_newline = true
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]      # The name of the module we are configuring is "character"
+symbol = "›"     # The "symbol" segment is being set to "➜"
+use_symbol_for_status = true  # Show "✖" when the command faild
+style_success = "green"
+style_failure = "red"
+
+[line_break]
+#disabled = true
+
+# battery setting
+[battery]
+full_symbol = "  "
+charging_symbol = "  "
+discharging_symbol = "  "
+disabled = false
+
+[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+threshold = 10
+style = "bold red"
+
+[[battery.display]]
+threshold = 30
+style = "bold yellow"
+
+[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+threshold = 100
+style = "bold green"
+
+[time]
+disabled = false
+format = "%T"
+style = "bold bright-black"e
+
+[directory]
+truncation_length = "4"
+truncate_to_repo = true
+prefix = " 📁 "
+style = "green"
+disable = false
+
+[hostname]
+ssh_only = true
+prefix = "❮ "
+suffix = " ❯"
+style = "bold dimmed white"
+disabled = true
+
+[aws]
+style = "bold yellow"
+symbol = "  "
+displayed_items = "profile"
+#displayed_items = "region"
+#[aws.region_aliases]
+#ap-southeast-2 = "au"
+#us-east-1 = "va"
+
+[git_state]
+style = "green"
+
+[git_branch]
+symbol = "  "
+truncation_length = 4
+style = "bold green"
+disable = false
+
+[git_status]
+style = "bright-green"
+conflicted = " ⚠️  "
+deleted = " 﫧"
+modified = " 🛠 "
+stashed = " 📦 "
+staged = " ⤴️  "
+renamed = " 📝 "
+untracked = " ❓ "
+prefix = "|"
+suffix = " | "
+show_sync_count = true
+#disable = true
+
+[golang]
+symbol = " "
+
+[java]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "

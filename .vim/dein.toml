@@ -1,0 +1,105 @@
+[[plugins]]
+repo = 'junegunn/fzf'
+build_on = '''
+./install -all
+'''
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+
+[[plugins]]
+repo = 'previm/previm'
+
+[[plugins]]
+repo = 'mattn/vim-maketable'
+
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+
+[[plugins]]
+repo = 'markonm/traces.vim'
+
+[[plugins]]
+repo = 'skanehira/translate.vim'
+
+[[plugins]]
+repo = 'skanehira/docker.vim'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+
+[[plugins]]
+repo = 'unblevable/quick-scope'
+
+[[plugins]]
+repo = 'terryma/vim-expand-region'
+
+[[plugins]]
+repo = 'glidenote/memolist.vim'
+
+#[[plugins]]
+#repo = 'neoclide/coc.nvim'
+
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+
+[[plugins]]
+repo = 't9md/vim-quickhl'
+
+[[plugins]]
+repo = 'machakann/vim-sandwich'
+
+[[plugins]]
+repo = 'mhinz/vim-startify'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'ervandew/supertab'
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'simeji/winresizer'
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]]
+repo = 'yuttie/comfortable-motion.vim'
+
+# コードを自動補完してくれるプラグイン
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+
+# ファイルタイプに応じたコメントアウトと解除
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+# 検索高度化プラグイン
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+[[plugins]]
+repo = 'junegunn/fzf'
+
+# 文法チェック
+[[plugins]]
+repo = 'dense-analysis/ale'
+
+# ステータスバー
+[[plugins]]
+repo = 'vim-airline/vim-airline'

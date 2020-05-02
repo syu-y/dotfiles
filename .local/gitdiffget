@@ -1,0 +1,15 @@
+#!/bin/sh
+# -*- coding: utf-8 -*-
+
+if [ "$2" = "" ]; then
+  COMMIT_1="HEAD"
+  COMMIT_2=$1
+else
+  COMMIT_1=$1
+  COMMIT_2=$2
+fi
+
+# --------------------------------------------------------------------------------------------------
+
+git archive ${COMMIT_1} `git diff --name-only ${COMMIT_2} ${COMMIT_1} --diff-filter=ACMR` -o ./archive_`date "+%Y%m%d_%H%M%S"`.zip
+

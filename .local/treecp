@@ -1,0 +1,2 @@
+#!/bin/bash
+tree -adNF | pbcopy

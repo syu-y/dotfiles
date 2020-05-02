@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "node-gyp": "^5.0.7"
+  }
+}
