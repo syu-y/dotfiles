@@ -14,6 +14,8 @@ export PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
 alias python="python3"
 # Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+# nodebrew
+PATH=$HOME/.nodebrew/current/bin:$PATH
 
 
 # Customize to your needs...
@@ -22,7 +24,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/
 # starship prompt
 # ------------------------------ #
 
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 # ------------------------------ #
 # zplug
@@ -64,6 +66,7 @@ zplug "modules/prompt", from:prezto
 zplug "modules/homebrew", from:prezto
 zplug "modules/ruby", from:prezto
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "romkatv/powerlevel10k", as:theme, depth:1
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -84,18 +87,18 @@ gitDirty() { [[ $(git status 2> /dev/null | grep -o '\w\+' | tail -n1) != ("clea
 
 # Show cwd when shell prompts for input.
 tabtitle_precmd() {
-   if overridden; then return; fi
-   pwd=$(pwd) # Store full path as variable
-   cwd=${pwd##*/} # Extract current working dir only
-   print -Pn "\e]0;$cwd$(gitDirty)\a" # Replace with $pwd to show full path
+  if overridden; then return; fi
+  pwd=$(pwd) # Store full path as variable
+  cwd=${pwd##*/} # Extract current working dir only
+  print -Pn "\e]0;$cwd$(gitDirty)\a" # Replace with $pwd to show full path
 }
 [[ -z $precmd_functions ]] && precmd_functions=()
 precmd_functions=($precmd_functions tabtitle_precmd)
 
 # Prepend command (w/o arguments) to cwd while waiting for command to complete.
 tabtitle_preexec() {
-   if overridden; then return; fi
-   printf "\033]0;%s\a" "${1%% *} | $cwd$(gitDirty)" # Omit construct from $1 to show args
+  if overridden; then return; fi
+  printf "\033]0;%s\a" "${1%% *} | $cwd$(gitDirty)" # Omit construct from $1 to show args
 }
 [[ -z $preexec_functions ]] && preexec_functions=()
 preexec_functions=($preexec_functions tabtitle_preexec)
